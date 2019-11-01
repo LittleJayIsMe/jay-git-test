@@ -1,0 +1,21 @@
+<h1>Listing Articles</h1>
+<%= link_to 'New article', new_article_path %>
+<table>
+  <tr>
+    <th width="40%" align="left">Title</th>
+    <th width="50%" align="center">Text</th>
+    <th colspan="3"></th>
+  </tr>
+
+  <% @articles.each do |article| %>
+    <tr>
+      <td width="40%"  align="left"><%= article.title %></td>
+      <td width="50%"  align="center" ><%= article.text %></td>
+      <td><%= link_to '显示', article_path(article),method: :get%></td>
+      <td><%= link_to '编辑', edit_article_path(article) %></td>
+      <td><%= link_to '删除', article_path(article),
+                      method: :delete,
+                      data: { confirm: 'Are you sure?' } %></td>
+    </tr>
+  <% end %>
+</table>

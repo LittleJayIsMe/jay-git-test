@@ -1,6 +1,5 @@
 class WelcomeController < ApplicationController
-   puts 'aa'
-   puts '冲突了吗'
+   puts '啊哈，检测冲突
   def index
   end
 end

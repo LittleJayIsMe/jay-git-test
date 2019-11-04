@@ -4,6 +4,7 @@ class CommentsController < ApplicationController
     @comment = @article.comments.create(comment_params)
     redirect_to article_path(@article)
     puts '这是我新添加的'
+    puts '这是我从github上添加的'
   end
 
   def destroy

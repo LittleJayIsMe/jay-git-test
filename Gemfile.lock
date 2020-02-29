@@ -227,7 +227,7 @@ GEM
       cliver (~> 0.3.1)
       websocket-driver (>= 0.2.0)
     public_suffix (3.0.3)
-    puma (3.12.1)
+    puma (3.12.3)
     puma_worker_killer (0.1.1)
       get_process_mem (~> 0.2)
       puma (>= 2.7, < 5)
@@ -483,7 +483,7 @@ DEPENDENCIES
   paper_trail
   paranoia
   poltergeist
-  puma (~> 3.11)
+  puma (~> 3.12)
   puma_worker_killer
   rails (~> 5.2.2)
   rails-html-sanitizer

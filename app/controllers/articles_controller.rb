@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
   def create
+  	print ('ok')
     @article = Article.new(params.require(:article).permit(:title, :text))
     @article.save
     redirect_to @article
